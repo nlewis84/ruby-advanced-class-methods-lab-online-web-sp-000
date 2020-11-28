@@ -42,5 +42,6 @@ class Song
   
   def self.alphabetical
     binding.pry
+    @@all.sort_by!{ |m| m.name.downcase }
   end
 end
