@@ -41,7 +41,10 @@ class Song
   end
   
   def self.alphabetical
-    binding.pry
     @@all.sort_by { |m| m.name.downcase }
+  end
+  
+  def self.new_from_filename
+    
   end
 end
