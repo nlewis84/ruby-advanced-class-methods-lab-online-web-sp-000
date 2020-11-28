@@ -44,7 +44,10 @@ class Song
     @@all.sort_by { |m| m.name.downcase }
   end
   
-  def self.new_from_filename
+  def self.new_from_filename(filename)
+    song = self.new
+    song.name = name
+    song
     
   end
 end
